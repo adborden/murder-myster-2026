@@ -1,0 +1,19 @@
+---
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: murder-mystery-2026
+  namespace: murder-mystery-2026
+
+spec:
+  rules:
+    - host: mm26.a14n.net
+      http:
+        paths:
+          - path: /
+            backend:
+              service:
+                name: murder-mystery-2026
+                port:
+                  number: 80
+            pathType: Prefix
