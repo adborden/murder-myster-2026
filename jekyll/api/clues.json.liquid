@@ -1,0 +1,14 @@
+---
+---
+{
+  clues: [
+    {% for clue in site.pages | where_exp: "page", "page.clue_id" %}
+      {
+        "id": {{ clue.clue_id | jsonify }},
+        "time": {{ clue.time | jsonify }},
+        "url": {{ clue.url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+
+  ]
+}
