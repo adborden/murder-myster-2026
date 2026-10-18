@@ -26,4 +26,4 @@ EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
 
-LABEL org.opencontainers.image.source = "https://github.com/adborden/murder-mystery-2026"
+LABEL org.opencontainers.image.source="https://github.com/adborden/murder-mystery-2026"

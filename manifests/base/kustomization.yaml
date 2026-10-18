@@ -6,3 +6,7 @@ resources:
   - resources/deployment.yaml
   - resources/service.yaml
   - resources/ingress.yaml
+
+images:
+  - name: ghcr.io/adborden/murder-mystery-2026
+    newTag: 0.0.1-rc1
