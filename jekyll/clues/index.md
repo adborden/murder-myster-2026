@@ -13,8 +13,8 @@ You haven't found any clues yet. Keep looking!
 
 ### Debug tools
 
-- [the garden]({{ "clues/the-garden" | relative_url }})
-- [the kitchen]({{ "clues/the-kitchen" | relative_url }})
-- [the hallway]({{ "clues/the-hallway" | relative_url }})
+- [find a clue near the garden fountain]({% link clues/the-garden.md %})
+- [find a clue near the food table]({% link clues/the-kitchen.md %})
+- [find a clue in the drink table]({% link clues/the-hallway.md %})
 
 {% endif %}

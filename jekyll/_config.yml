@@ -23,17 +23,39 @@ email: adborden@a14n.net
 description: >-
   There's been a murder! Look for clues to help solve the case.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mm26.a14n.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adborden
 github_username: adborden
+timezone: America/Los_Angeles
+
+author: Aaron D Borden
+#author:
+#  name: Aaron D Borden
+#  email: adborden@a14n.net
 
 # Build settings
 theme: minima
+permalink: pretty
 plugins:
-  - jekyll-assets
+  - jekyll-responsive-image
 
-#minima:
-#  skin: dark
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
+
+minima:
+  skin: dark
+
+assets:
+  sources:
+    - assets/img
+
+responsive:
+  automatic: true
+  automatic_scales: "1x, 1.5x, 2x"
 
 hide_site_feed_link: false
 # Exclude from processing.
@@ -44,14 +66,15 @@ hide_site_feed_link: false
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Dockerfile
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

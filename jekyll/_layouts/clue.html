@@ -4,6 +4,11 @@ layout: page
 
 <h2>{{ page.time }}</h2>
 
-{{ page.content }}
+<div>{{ content }}</div>
 
+<div>
+  <p>
+    <a href="{% link clues/index.md %}">See all of your clues</a>
+  </p>
+</div>
 <mm-clue name="{{ page.clue_id }}"></mm-clue>

@@ -1,7 +1,7 @@
 ---
 ---
 [
-  {%- assign clues = site.pages | where_exp: "page", "page.clue_id" | | sort: 'time' %}
+  {%- assign clues = site.pages | where_exp: "page", "page.clue_id" | sort: 'time' %}
   {%- for clue in clues %}
     {
       "id": {{ clue.clue_id | jsonify }},

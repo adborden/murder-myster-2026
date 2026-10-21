@@ -15,6 +15,17 @@ spec:
       labels:
         app: murder-mystery-2026
     spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: murder-mystery-2026
+          matchLabelKeys:
+            - pod-template-hash
+      imagePullSecrets:
+        - name: ghcr-image-pull
       securityContext:
         runAsNonRoot: true
         runAsUser: 101

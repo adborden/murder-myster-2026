@@ -9,4 +9,4 @@ resources:
 
 images:
   - name: ghcr.io/adborden/murder-mystery-2026
-    newTag: 0.0.1-rc1
+    newTag: 0.0.1-rc11
