@@ -28,10 +28,10 @@ twitter_username: adborden
 github_username: adborden
 timezone: America/Los_Angeles
 
-author: Aaron D Borden
-#author:
-#  name: Aaron D Borden
-#  email: adborden@a14n.net
+#author: Aaron D Borden
+author:
+  name: Aaron D Borden
+  email: adborden@a14n.net
 
 # Build settings
 theme: minima
@@ -45,6 +45,8 @@ responsive_image:
     - width: 320
     - width: 480
     - width: 800
+
+header_pages: []
 
 minima:
   skin: dark
