@@ -63,3 +63,6 @@ docker-stop: ## Stop the locally running Docker container
 
 docker-test: ## Verify running container health check endpoint
 	curl -f -i http://localhost:$(PORT)/healthz
+
+jekyll-publish:
+	bundle exec jekyll build && docker build . --push --tag ghcr.io/adborden/murder-mystery-2026:latest --tag ghcr.io/adborden/murder-mystery-2026:$(IMAGE_TAG)

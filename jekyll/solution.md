@@ -13,3 +13,5 @@ garden, picks some belladonna, and leaves it with the lavender in the kitchen.
 The maid unknowingly makes Mr. Blackwood’s nightcap with both the lavender and
 the belladonna, creating a poisoned concoction. Upon ingesting the evening
 drink, he drops dead from the poison.
+
+<mm-reset-board-button></mm-reset-board-button>

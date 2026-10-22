@@ -126,7 +126,7 @@ class ClueBoard extends HTMLElement {
         .solution {
           border: 1px solid #cec;
           border-radius: 8px;
-          background-color: #6c6;
+          background-color: #272;
           display: none;
           padding: 1rem;
           max-width: 24rem;
@@ -138,16 +138,24 @@ class ClueBoard extends HTMLElement {
         }
       </style>
 
-      <div class="solution">
-        <p>Congratulations! You've discovered all the clues. Are you ready to <a href="${GAME_DATA.solution.url}">reveal the mystery?</a></p>
-      </div>
       <div class="clue-list">
       ${clueElements.join("")}
+      </div>
+      <div class="solution">
+        <p>Congratulations! You've discovered all the clues. Are you ready to <a href="${GAME_DATA.solution.url}">reveal the mystery?</a></p>
       </div>
     `;
 
     if (state.solved) {
       this.shadowRoot.querySelector(".solution").classList.add("solved");
+
+      this.shadowRoot
+        .querySelector(".solution a")
+        ?.addEventListener("click", (event) => {
+          confirm(
+            "There's no going back! Are you sure you want to reveal the solution?",
+          ) || event.preventDefault();
+        });
     }
   }
 }
@@ -164,19 +172,21 @@ class ResetBoardButton extends HTMLElement {
   render() {
     if (!this.shadowRoot) return;
 
-    const displayStyle = discovered_clues.length <= 0 ? "none" : "block";
+    const displayStyle = discovered_clues.length <= 0 ? "none" : "inline-block";
 
     this.shadowRoot.innerHTML = `
       <style>
         :host {
           display: ${displayStyle};
-          padding: 0.5rem;
-          max-width: 24rem;
+          margin-right: 10px;
         }
 
         button {
           background-color: #faa;
           cursor: pointer;
+          padding: 0.5rem 1rem;
+          border-style: none;
+          border-radius: 4px;
         }
       </style>
 
@@ -184,7 +194,9 @@ class ResetBoardButton extends HTMLElement {
     `;
 
     this.shadowRoot.querySelector("button")?.addEventListener("click", () => {
-      resetGame();
+      confirm(
+        "Are you sure you want to reset the game? This will erase all discovered clues.",
+      ) && resetGame();
     });
   }
 }
