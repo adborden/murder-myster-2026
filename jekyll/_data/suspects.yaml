@@ -1,28 +1,31 @@
 gardener:
   name: The Gardener
+  img: assets/img/the-gardener.png
   motive: |
-    Mr Blackwood had promised to invest funds in the gardener’s new
-    plant nursery. When Mr Blackwood pulled out of the deal, the
-    gardener was left with tremendous debt. The land was settled, the
-    construction had started, and the plants and seeds were already
-    arranged. With Blackwood out of the way, could the contract be
-    forged and the gardener’s dream be realized?
+    Mr. Blackwood had promised to invest funds in the gardener’s plan to build
+    a new plant nursery. When Mr. Blackwood pulled out of the deal, the gardener
+    was left with tremendous debt. The land was settled, the construction had
+    started, and the plants and seeds were already arranged. With Blackwood out
+    of the way, could the contract be forged and the gardener’s dream be
+    realized?
 
 chauffeur:
   name: The Chauffeur
+  img: assets/img/the-chauffeur.png
   motive: |
-    The chauffeur was recently blackmailed by environmental protesters who want to
-    stop Mr Blackwood’s project in the Amazon which would be devastating to the
-    rainforest and the local communities. They’ve offered the chauffeur enough
-    money to “take care” of Mr Blackwood. It’s enough that he would never have to
-    work again. Would he really go through with it?
+    The chauffeur is being blackmailed by an unknown party who wants to stop
+    Mr. Blackwood’s development project which rivals their own. They’ve offered
+    the chauffeur money to “take out” Mr. Blackwood. It’s enough that he would
+    never have to work again. Would he really go through with it? Could he
+    afford not to?
 
 maid:
   name: The Maid
+  img: assets/img/the-maid.png
   motive: |
-    The maid had a son who disappeared five years ago. Mr Blackwood was the last
-    person who saw him alive and was initially the person of interest in the
-    investigation, which was closed and shelved as a cold case. It wouldn't have
-    been the first time that Mr Blackwood has bribed his way out of justice. The
-    maid has gotten close to Mr Blackwood through a fake name. Was this killing her
-    revenge?
+    The maid had a son who disappeared five years ago. Mr. Blackwood was the
+    last person who saw him alive and was initially the person of interest in
+    the investigation. The case was abruptly shelved as a cold case. It
+    wouldn’t have been the first time that Mr. Blackwood has bribed his way out
+    of justice. The maid has gotten close to Mr. Blackwood through a fake name.
+    Was this her opportunity for revenge?

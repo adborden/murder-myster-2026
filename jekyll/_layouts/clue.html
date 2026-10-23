@@ -2,7 +2,12 @@
 layout: page
 ---
 
-<h2>{{ page.time }}</h2>
+{% if page.img %}
+<div class="clue-img">
+  {% responsive_image_block %} path: {{ page.img }} {% endresponsive_image_block
+  %}
+</div>
+{% endif %}
 
 <div>{{ content }}</div>
 

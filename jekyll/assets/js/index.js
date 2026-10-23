@@ -123,6 +123,10 @@ class ClueBoard extends HTMLElement {
           margin-bottom: 1rem;
         }
 
+        a {
+          color: #79b8ff;
+        }
+
         .solution {
           border: 1px solid #cec;
           border-radius: 8px;
@@ -190,7 +194,7 @@ class ResetBoardButton extends HTMLElement {
         }
       </style>
 
-      <button>Reset</button>
+      <button>Play again</button>
     `;
 
     this.shadowRoot.querySelector("button")?.addEventListener("click", () => {

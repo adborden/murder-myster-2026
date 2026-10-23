@@ -2,6 +2,16 @@
 layout: page
 ---
 
-<h1>{{ page.name }}</h1>
+{% assign suspect = site.data.suspects[page.suspect_id] %}
 
-<div>{{ content }}</div>
+<h1>{{ suspect.name }}</h1>
+
+<div class="clue-img">
+  {% responsive_image_block %}
+  path: {{ page.img }}
+  {% endresponsive_image_block %}
+</div>
+
+<div>
+{{ suspect.motive }}
+</div>

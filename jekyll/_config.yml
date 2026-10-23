@@ -46,7 +46,11 @@ responsive_image:
     - width: 480
     - width: 800
 
-header_pages: []
+header_pages:
+  - index.md
+  - suspects/index.md
+  - clues/index.md
+  - how-it-works.md
 
 minima:
   skin: dark
