@@ -119,7 +119,6 @@ class ClueBoard extends HTMLElement {
           border: 1px solid #ccc;
           border-radius: 8px;
           padding: 1rem;
-          max-width: 24rem;
           margin-bottom: 1rem;
         }
 
