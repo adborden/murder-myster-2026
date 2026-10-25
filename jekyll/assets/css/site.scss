@@ -4,3 +4,32 @@
 .clue-img {
   margin-bottom: 1rem;
 }
+
+.clue {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 24rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #79b8ff;
+}
+
+.solution {
+  border: 1px solid #cec;
+  border-radius: 8px;
+  background-color: #272;
+  display: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.solution.solved {
+  display: block;
+}
+
+mm-reset-board-button {
+  display: none;
+}

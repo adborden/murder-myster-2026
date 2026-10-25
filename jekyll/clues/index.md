@@ -3,11 +3,24 @@ layout: page
 title: The Clues
 ---
 
-<mm-clueboard>
+{%- assign clues = site.pages | where_exp: "page", "page.clue_id" | sort: 'time' %}
+{% for clue in clues %}
 
-You haven't found any clues yet. Keep looking!
+<div class="clue">
 
-</mm-clueboard>
+  <div><a href="{{clue.url }}">{{clue.clue_id }} {{ clue.time }}</a></div>
+
+  <div>{{ clue.snippet }}</div>
+
+</div>
+
+{% endfor %}
+
+<div>
+
+<a href="{% link solution.md %}">Are you ready to reveal the solution?</a>
+
+</div>
 
 {% if jekyll.environment != "production" %}
 
